@@ -7,12 +7,21 @@
 //
 
 #import "KHViewController.h"
+#import "KHLoadingView.h"
 
 @interface KHViewController ()
 
 @end
 
 @implementation KHViewController
+
+-(void)viewDidAppear:(BOOL)animated{
+    //adds the loadingview to self.view:
+    [self.view addSubview:[[KHLoadingView alloc] initWithView:self.view]];
+    //Hide KHLoadingView after N seconds
+    [KHLoadingView hideLoadingViewForView:self.view withDelay:3];
+    
+}
 
 - (void)viewDidLoad
 {

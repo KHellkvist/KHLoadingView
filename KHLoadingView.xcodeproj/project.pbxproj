@@ -21,6 +21,7 @@
 		F4CBD52117F4790600EF9AAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CBD50317F4790600EF9AAC /* UIKit.framework */; };
 		F4CBD52917F4790600EF9AAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBD52717F4790600EF9AAC /* InfoPlist.strings */; };
 		F4CBD52B17F4790600EF9AAC /* KHLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CBD52A17F4790600EF9AAC /* KHLoadingViewTests.m */; };
+		F4CBD53617F4794500EF9AAC /* KHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CBD53517F4794500EF9AAC /* KHLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F4CBD52617F4790600EF9AAC /* KHLoadingViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KHLoadingViewTests-Info.plist"; sourceTree = "<group>"; };
 		F4CBD52817F4790600EF9AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4CBD52A17F4790600EF9AAC /* KHLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHLoadingViewTests.m; sourceTree = "<group>"; };
+		F4CBD53417F4794500EF9AAC /* KHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingView.h; sourceTree = "<group>"; };
+		F4CBD53517F4794500EF9AAC /* KHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		F4CBD50517F4790600EF9AAC /* KHLoadingView */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBD53717F4794F00EF9AAC /* LoadingView */,
 				F4CBD50E17F4790600EF9AAC /* KHAppDelegate.h */,
 				F4CBD50F17F4790600EF9AAC /* KHAppDelegate.m */,
 				F4CBD51117F4790600EF9AAC /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				F4CBD52717F4790600EF9AAC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CBD53717F4794F00EF9AAC /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBD53417F4794500EF9AAC /* KHLoadingView.h */,
+				F4CBD53517F4794500EF9AAC /* KHLoadingView.m */,
+			);
+			name = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +265,7 @@
 			files = (
 				F4CBD51617F4790600EF9AAC /* KHViewController.m in Sources */,
 				F4CBD50C17F4790600EF9AAC /* main.m in Sources */,
+				F4CBD53617F4794500EF9AAC /* KHLoadingView.m in Sources */,
 				F4CBD51017F4790600EF9AAC /* KHAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
